@@ -1,0 +1,70 @@
+@model IEnumerable<TourDto>
+
+@{
+    ViewData["Title"] = "Manage Tours";
+}
+
+<h1>Manage Tours</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New Tour</a>
+</p>
+
+<div class="row">
+    <div class="col-md-12">
+        <form asp-action="Search" method="get" class="mb-3">
+            <div class="input-group">
+                <input type="text" name="searchTerm" class="form-control" placeholder="Search tours..." value="@ViewBag.SearchTerm" />
+                <button type="submit" class="btn btn-outline-secondary">Search</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Tour Name</th>
+            <th>Place</th>
+            <th>Days</th>
+            <th>Price</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var tour in Model)
+            {
+                <tr>
+                    <td>@tour.TourName</td>
+                    <td>@tour.Place</td>
+                    <td>@tour.Days</td>
+                    <td>$@tour.Price</td>
+                    <td>
+                        @if (tour.IsActive)
+                        {
+                            <span class="badge bg-success">Active</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary">Inactive</span>
+                        }
+                    </td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@tour.Id" class="btn btn-sm btn-info">Details</a>
+                        <a asp-action="Edit" asp-route-id="@tour.Id" class="btn btn-sm btn-warning">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@tour.Id" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="6" class="text-center">No tours found.</td>
+            </tr>
+        }
+    </tbody>
+</table>

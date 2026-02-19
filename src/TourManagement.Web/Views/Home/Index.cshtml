@@ -1,0 +1,57 @@
+@model IEnumerable<TourDto>
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Tour Management</h1>
+    <p class="lead">Discover amazing tours and book your next adventure!</p>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-12">
+        <h2>Featured Tours</h2>
+        <div class="row">
+            @if (Model != null && Model.Any())
+            {
+                @foreach (var tour in Model.Take(6))
+                {
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            @if (!string.IsNullOrEmpty(tour.PicturePath))
+                            {
+                                <img src="@tour.PicturePath" class="card-img-top" alt="@tour.TourName" style="height: 200px; object-fit: cover;">
+                            }
+                            else
+                            {
+                                <div class="card-img-top bg-secondary text-white d-flex align-items-center justify-content-center" style="height: 200px;">
+                                    <span>No Image</span>
+                                </div>
+                            }
+                            <div class="card-body">
+                                <h5 class="card-title">@tour.TourName</h5>
+                                <p class="card-text">
+                                    <strong>Place:</strong> @tour.Place<br />
+                                    <strong>Days:</strong> @tour.Days<br />
+                                    <strong>Price:</strong> $@tour.Price
+                                </p>
+                                <a asp-controller="Tour" asp-action="Details" asp-route-id="@tour.Id" class="btn btn-primary">View Details</a>
+                                <a asp-controller="Booking" asp-action="Create" asp-route-tourId="@tour.Id" class="btn btn-success">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="col-12">
+                    <p class="text-muted">No tours available at the moment.</p>
+                </div>
+            }
+        </div>
+        <div class="text-center mt-3">
+            <a asp-controller="Tour" asp-action="Display" class="btn btn-lg btn-primary">View All Tours</a>
+        </div>
+    </div>
+</div>
