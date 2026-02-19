@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "9bV+wSCgckC5Gf/eugAiSYg1o8I0vhy6T1BSz1UdeEY=",
+  "Source": "TourManagement.Web",
+  "BasePath": "_content/TourManagement.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

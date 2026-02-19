@@ -1,0 +1,1200 @@
+SF:/modernize-data/studio-data/TNT1001/APP1465/transformed-code/85/studio-workspace/backenddot/src/TourManagement.Domain/Entities/Booking.cs
+FN:7,System.Int32 TourManagement.Domain.Entities.Booking::get_Id()
+FNDA:0,System.Int32 TourManagement.Domain.Entities.Booking::get_Id()
+DA:8,0
+FN:8,System.Int32 TourManagement.Domain.Entities.Booking::get_UserId()
+FNDA:0,System.Int32 TourManagement.Domain.Entities.Booking::get_UserId()
+DA:9,0
+FN:9,System.Int32 TourManagement.Domain.Entities.Booking::get_TourId()
+FNDA:0,System.Int32 TourManagement.Domain.Entities.Booking::get_TourId()
+DA:10,0
+FN:10,System.DateTime TourManagement.Domain.Entities.Booking::get_BookingDate()
+FNDA:0,System.DateTime TourManagement.Domain.Entities.Booking::get_BookingDate()
+DA:11,0
+FN:11,System.Int32 TourManagement.Domain.Entities.Booking::get_NumberOfPeople()
+FNDA:0,System.Int32 TourManagement.Domain.Entities.Booking::get_NumberOfPeople()
+DA:12,0
+FN:12,System.Decimal TourManagement.Domain.Entities.Booking::get_TotalAmount()
+FNDA:0,System.Decimal TourManagement.Domain.Entities.Booking::get_TotalAmount()
+DA:13,0
+FN:13,System.String TourManagement.Domain.Entities.Booking::get_Status()
+FNDA:0,System.String TourManagement.Domain.Entities.Booking::get_Status()
+DA:14,0
+FN:14,System.String TourManagement.Domain.Entities.Booking::get_SpecialRequests()
+FNDA:0,System.String TourManagement.Domain.Entities.Booking::get_SpecialRequests()
+DA:15,0
+FN:15,System.Nullable`1<System.DateTime> TourManagement.Domain.Entities.Booking::get_CancellationDate()
+FNDA:0,System.Nullable`1<System.DateTime> TourManagement.Domain.Entities.Booking::get_CancellationDate()
+DA:16,0
+FN:16,System.DateTime TourManagement.Domain.Entities.Booking::get_CreatedDate()
+FNDA:0,System.DateTime TourManagement.Domain.Entities.Booking::get_CreatedDate()
+DA:17,0
+FN:17,System.Nullable`1<System.DateTime> TourManagement.Domain.Entities.Booking::get_ModifiedDate()
+FNDA:0,System.Nullable`1<System.DateTime> TourManagement.Domain.Entities.Booking::get_ModifiedDate()
+DA:18,0
+FN:20,TourManagement.Domain.Entities.User TourManagement.Domain.Entities.Booking::get_User()
+FNDA:0,TourManagement.Domain.Entities.User TourManagement.Domain.Entities.Booking::get_User()
+DA:21,0
+FN:21,TourManagement.Domain.Entities.Tour TourManagement.Domain.Entities.Booking::get_Tour()
+FNDA:0,TourManagement.Domain.Entities.Tour TourManagement.Domain.Entities.Booking::get_Tour()
+DA:22,0
+LF:13
+LH:0
+BRF:0
+BRH:0
+FNF:13
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP1465/transformed-code/85/studio-workspace/backenddot/src/TourManagement.Domain/Entities/Tour.cs
+FN:7,System.Int32 TourManagement.Domain.Entities.Tour::get_Id()
+FNDA:9,System.Int32 TourManagement.Domain.Entities.Tour::get_Id()
+DA:8,9
+FN:8,System.String TourManagement.Domain.Entities.Tour::get_TourName()
+FNDA:14,System.String TourManagement.Domain.Entities.Tour::get_TourName()
+DA:9,14
+FN:9,System.String TourManagement.Domain.Entities.Tour::get_Place()
+FNDA:14,System.String TourManagement.Domain.Entities.Tour::get_Place()
+DA:10,14
+FN:10,System.Int32 TourManagement.Domain.Entities.Tour::get_Days()
+FNDA:9,System.Int32 TourManagement.Domain.Entities.Tour::get_Days()
+DA:11,9
+FN:11,System.Decimal TourManagement.Domain.Entities.Tour::get_Price()
+FNDA:9,System.Decimal TourManagement.Domain.Entities.Tour::get_Price()
+DA:12,9
+FN:12,System.String TourManagement.Domain.Entities.Tour::get_Locations()
+FNDA:11,System.String TourManagement.Domain.Entities.Tour::get_Locations()
+DA:13,11
+FN:13,System.String TourManagement.Domain.Entities.Tour::get_TourInfo()
+FNDA:11,System.String TourManagement.Domain.Entities.Tour::get_TourInfo()
+DA:14,11
+FN:14,System.String TourManagement.Domain.Entities.Tour::get_PicturePath()
+FNDA:5,System.String TourManagement.Domain.Entities.Tour::get_PicturePath()
+DA:15,5
+FN:15,System.DateTime TourManagement.Domain.Entities.Tour::get_CreatedDate()
+FNDA:6,System.DateTime TourManagement.Domain.Entities.Tour::get_CreatedDate()
+DA:16,6
+FN:16,System.Nullable`1<System.DateTime> TourManagement.Domain.Entities.Tour::get_ModifiedDate()
+FNDA:0,System.Nullable`1<System.DateTime> TourManagement.Domain.Entities.Tour::get_ModifiedDate()
+DA:17,0
+FN:17,System.Boolean TourManagement.Domain.Entities.Tour::get_IsActive()
+FNDA:10,System.Boolean TourManagement.Domain.Entities.Tour::get_IsActive()
+DA:18,10
+FN:20,System.Collections.Generic.ICollection`1<TourManagement.Domain.Entities.Booking> TourManagement.Domain.Entities.Tour::get_Bookings()
+FNDA:5,System.Collections.Generic.ICollection`1<TourManagement.Domain.Entities.Booking> TourManagement.Domain.Entities.Tour::get_Bookings()
+DA:21,5
+LF:12
+LH:11
+BRF:0
+BRH:0
+FNF:12
+FNH:11
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP1465/transformed-code/85/studio-workspace/backenddot/src/TourManagement.Domain/Entities/User.cs
+FN:7,System.Int32 TourManagement.Domain.Entities.User::get_Id()
+FNDA:0,System.Int32 TourManagement.Domain.Entities.User::get_Id()
+DA:8,0
+FN:8,System.String TourManagement.Domain.Entities.User::get_Email()
+FNDA:0,System.String TourManagement.Domain.Entities.User::get_Email()
+DA:9,0
+FN:9,System.String TourManagement.Domain.Entities.User::get_PasswordHash()
+FNDA:0,System.String TourManagement.Domain.Entities.User::get_PasswordHash()
+DA:10,0
+FN:10,System.String TourManagement.Domain.Entities.User::get_FirstName()
+FNDA:0,System.String TourManagement.Domain.Entities.User::get_FirstName()
+DA:11,0
+FN:11,System.String TourManagement.Domain.Entities.User::get_LastName()
+FNDA:0,System.String TourManagement.Domain.Entities.User::get_LastName()
+DA:12,0
+FN:12,System.String TourManagement.Domain.Entities.User::get_PhoneNumber()
+FNDA:0,System.String TourManagement.Domain.Entities.User::get_PhoneNumber()
+DA:13,0
+FN:13,System.String TourManagement.Domain.Entities.User::get_Address()
+FNDA:0,System.String TourManagement.Domain.Entities.User::get_Address()
+DA:14,0
+FN:14,System.DateTime TourManagement.Domain.Entities.User::get_CreatedDate()
+FNDA:0,System.DateTime TourManagement.Domain.Entities.User::get_CreatedDate()
+DA:15,0
+FN:15,System.Nullable`1<System.DateTime> TourManagement.Domain.Entities.User::get_ModifiedDate()
+FNDA:0,System.Nullable`1<System.DateTime> TourManagement.Domain.Entities.User::get_ModifiedDate()
+DA:16,0
+FN:16,System.Boolean TourManagement.Domain.Entities.User::get_IsActive()
+FNDA:0,System.Boolean TourManagement.Domain.Entities.User::get_IsActive()
+DA:17,0
+FN:17,System.String TourManagement.Domain.Entities.User::get_Role()
+FNDA:0,System.String TourManagement.Domain.Entities.User::get_Role()
+DA:18,0
+FN:20,System.Collections.Generic.ICollection`1<TourManagement.Domain.Entities.Booking> TourManagement.Domain.Entities.User::get_Bookings()
+FNDA:0,System.Collections.Generic.ICollection`1<TourManagement.Domain.Entities.Booking> TourManagement.Domain.Entities.User::get_Bookings()
+DA:21,0
+LF:12
+LH:0
+BRF:0
+BRH:0
+FNF:12
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP1465/transformed-code/85/studio-workspace/backenddot/src/TourManagement.Infrastructure/Repositories/BookingRepository.cs
+FN:12,System.Void TourManagement.Infrastructure.Repositories.BookingRepository::.ctor(TourManagement.Infrastructure.Data.TourManagementDbContext)
+FNDA:0,System.Void TourManagement.Infrastructure.Repositories.BookingRepository::.ctor(TourManagement.Infrastructure.Data.TourManagementDbContext)
+DA:13,0
+DA:14,0
+DA:15,0
+FN:37,System.Void TourManagement.Infrastructure.Repositories.BookingRepository/<GetAllAsync>d__3::MoveNext()
+FNDA:0,System.Void TourManagement.Infrastructure.Repositories.BookingRepository/<GetAllAsync>d__3::MoveNext()
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+FN:46,System.Void TourManagement.Infrastructure.Repositories.BookingRepository/<GetByIdAsync>d__4::MoveNext()
+FNDA:0,System.Void TourManagement.Infrastructure.Repositories.BookingRepository/<GetByIdAsync>d__4::MoveNext()
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+FN:27,System.Void TourManagement.Infrastructure.Repositories.BookingRepository/<GetByTourIdAsync>d__2::MoveNext()
+FNDA:0,System.Void TourManagement.Infrastructure.Repositories.BookingRepository/<GetByTourIdAsync>d__2::MoveNext()
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+FN:17,System.Void TourManagement.Infrastructure.Repositories.BookingRepository/<GetByUserIdAsync>d__1::MoveNext()
+FNDA:0,System.Void TourManagement.Infrastructure.Repositories.BookingRepository/<GetByUserIdAsync>d__1::MoveNext()
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+LF:32
+LH:0
+BRF:0
+BRH:0
+FNF:5
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP1465/transformed-code/85/studio-workspace/backenddot/src/TourManagement.Infrastructure/Repositories/Repository.cs
+FN:15,System.Void TourManagement.Infrastructure.Repositories.Repository`1::.ctor(TourManagement.Infrastructure.Data.TourManagementDbContext)
+FNDA:0,System.Void TourManagement.Infrastructure.Repositories.Repository`1::.ctor(TourManagement.Infrastructure.Data.TourManagementDbContext)
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+BRDA:18,11,0,0
+BRDA:18,11,1,0
+FN:32,System.Void TourManagement.Infrastructure.Repositories.Repository`1/<AddAsync>d__5::MoveNext()
+FNDA:0,System.Void TourManagement.Infrastructure.Repositories.Repository`1/<AddAsync>d__5::MoveNext()
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+FN:46,System.Void TourManagement.Infrastructure.Repositories.Repository`1/<DeleteAsync>d__7::MoveNext()
+FNDA:0,System.Void TourManagement.Infrastructure.Repositories.Repository`1/<DeleteAsync>d__7::MoveNext()
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+BRDA:49,180,0,0
+BRDA:49,180,1,0
+FN:27,System.Void TourManagement.Infrastructure.Repositories.Repository`1/<GetAllAsync>d__4::MoveNext()
+FNDA:0,System.Void TourManagement.Infrastructure.Repositories.Repository`1/<GetAllAsync>d__4::MoveNext()
+DA:28,0
+DA:29,0
+DA:30,0
+FN:22,System.Void TourManagement.Infrastructure.Repositories.Repository`1/<GetByIdAsync>d__3::MoveNext()
+FNDA:0,System.Void TourManagement.Infrastructure.Repositories.Repository`1/<GetByIdAsync>d__3::MoveNext()
+DA:23,0
+DA:24,0
+DA:25,0
+FN:39,System.Void TourManagement.Infrastructure.Repositories.Repository`1/<UpdateAsync>d__6::MoveNext()
+FNDA:0,System.Void TourManagement.Infrastructure.Repositories.Repository`1/<UpdateAsync>d__6::MoveNext()
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+LF:30
+LH:0
+BRF:4
+BRH:0
+FNF:6
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP1465/transformed-code/85/studio-workspace/backenddot/src/TourManagement.Infrastructure/Repositories/TourRepository.cs
+FN:12,System.Void TourManagement.Infrastructure.Repositories.TourRepository::.ctor(TourManagement.Infrastructure.Data.TourManagementDbContext)
+FNDA:0,System.Void TourManagement.Infrastructure.Repositories.TourRepository::.ctor(TourManagement.Infrastructure.Data.TourManagementDbContext)
+DA:13,0
+DA:14,0
+DA:15,0
+FN:17,System.Void TourManagement.Infrastructure.Repositories.TourRepository/<GetActiveToursAsync>d__1::MoveNext()
+FNDA:0,System.Void TourManagement.Infrastructure.Repositories.TourRepository/<GetActiveToursAsync>d__1::MoveNext()
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+FN:25,System.Void TourManagement.Infrastructure.Repositories.TourRepository/<SearchToursAsync>d__2::MoveNext()
+FNDA:0,System.Void TourManagement.Infrastructure.Repositories.TourRepository/<SearchToursAsync>d__2::MoveNext()
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+BRDA:27,72,0,0
+BRDA:27,72,1,0
+LF:22
+LH:0
+BRF:2
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP1465/transformed-code/85/studio-workspace/backenddot/src/TourManagement.Infrastructure/Repositories/UserRepository.cs
+FN:12,System.Void TourManagement.Infrastructure.Repositories.UserRepository::.ctor(TourManagement.Infrastructure.Data.TourManagementDbContext)
+FNDA:0,System.Void TourManagement.Infrastructure.Repositories.UserRepository::.ctor(TourManagement.Infrastructure.Data.TourManagementDbContext)
+DA:13,0
+DA:14,0
+DA:15,0
+FN:17,System.Void TourManagement.Infrastructure.Repositories.UserRepository/<GetByEmailAsync>d__1::MoveNext()
+FNDA:0,System.Void TourManagement.Infrastructure.Repositories.UserRepository/<GetByEmailAsync>d__1::MoveNext()
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+LF:7
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP1465/transformed-code/85/studio-workspace/backenddot/src/TourManagement.Infrastructure/Data/TourManagementDbContext.cs
+FN:15,Microsoft.EntityFrameworkCore.DbSet`1<TourManagement.Domain.Entities.Tour> TourManagement.Infrastructure.Data.TourManagementDbContext::get_Tours()
+FNDA:0,Microsoft.EntityFrameworkCore.DbSet`1<TourManagement.Domain.Entities.Tour> TourManagement.Infrastructure.Data.TourManagementDbContext::get_Tours()
+DA:16,0
+FN:16,Microsoft.EntityFrameworkCore.DbSet`1<TourManagement.Domain.Entities.User> TourManagement.Infrastructure.Data.TourManagementDbContext::get_Users()
+FNDA:0,Microsoft.EntityFrameworkCore.DbSet`1<TourManagement.Domain.Entities.User> TourManagement.Infrastructure.Data.TourManagementDbContext::get_Users()
+DA:17,0
+FN:17,Microsoft.EntityFrameworkCore.DbSet`1<TourManagement.Domain.Entities.Booking> TourManagement.Infrastructure.Data.TourManagementDbContext::get_Bookings()
+FNDA:0,Microsoft.EntityFrameworkCore.DbSet`1<TourManagement.Domain.Entities.Booking> TourManagement.Infrastructure.Data.TourManagementDbContext::get_Bookings()
+DA:18,0
+FN:20,System.Void TourManagement.Infrastructure.Data.TourManagementDbContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:0,System.Void TourManagement.Infrastructure.Data.TourManagementDbContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:21,0
+DA:22,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:55,0
+DA:58,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:80,0
+FN:11,System.Void TourManagement.Infrastructure.Data.TourManagementDbContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<TourManagement.Infrastructure.Data.TourManagementDbContext>)
+FNDA:0,System.Void TourManagement.Infrastructure.Data.TourManagementDbContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<TourManagement.Infrastructure.Data.TourManagementDbContext>)
+DA:12,0
+DA:13,0
+DA:14,0
+LF:60
+LH:0
+BRF:0
+BRH:0
+FNF:5
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP1465/transformed-code/85/studio-workspace/backenddot/src/TourManagement.Application/Services/BookingService.cs
+FN:18,System.Void TourManagement.Application.Services.BookingService::.ctor(TourManagement.Infrastructure.Interfaces.IBookingRepository,TourManagement.Infrastructure.Interfaces.ITourRepository,TourManagement.Infrastructure.Interfaces.IUserRepository,Microsoft.Extensions.Logging.ILogger`1<TourManagement.Application.Services.BookingService>)
+FNDA:0,System.Void TourManagement.Application.Services.BookingService::.ctor(TourManagement.Infrastructure.Interfaces.IBookingRepository,TourManagement.Infrastructure.Interfaces.ITourRepository,TourManagement.Infrastructure.Interfaces.IUserRepository,Microsoft.Extensions.Logging.ILogger`1<TourManagement.Application.Services.BookingService>)
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+BRDA:25,11,0,0
+BRDA:25,11,1,0
+BRDA:26,33,0,0
+BRDA:26,33,1,0
+BRDA:27,55,0,0
+BRDA:27,55,1,0
+BRDA:28,78,0,0
+BRDA:28,78,1,0
+FN:174,System.Void TourManagement.Application.Services.BookingService/<CancelBookingAsync>d__11::MoveNext()
+FNDA:0,System.Void TourManagement.Application.Services.BookingService/<CancelBookingAsync>d__11::MoveNext()
+DA:175,0
+DA:177,0
+DA:178,0
+DA:180,0
+DA:181,0
+DA:182,0
+DA:183,0
+DA:184,0
+DA:187,0
+DA:188,0
+DA:189,0
+DA:191,0
+DA:192,0
+DA:194,0
+DA:196,0
+DA:197,0
+DA:198,0
+DA:199,0
+DA:201,0
+BRDA:181,227,0,0
+BRDA:181,227,1,0
+FN:91,System.Void TourManagement.Application.Services.BookingService/<CreateBookingAsync>d__9::MoveNext()
+FNDA:0,System.Void TourManagement.Application.Services.BookingService/<CreateBookingAsync>d__9::MoveNext()
+DA:92,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:113,0
+DA:115,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:124,0
+DA:125,0
+DA:127,0
+DA:128,0
+DA:130,0
+DA:132,0
+DA:133,0
+DA:134,0
+DA:135,0
+DA:136,0
+DA:138,0
+BRDA:100,282,0,0
+BRDA:100,282,1,0
+BRDA:107,510,0,0
+BRDA:107,510,1,0
+FN:31,System.Void TourManagement.Application.Services.BookingService/<GetAllBookingsAsync>d__5::MoveNext()
+FNDA:0,System.Void TourManagement.Application.Services.BookingService/<GetAllBookingsAsync>d__5::MoveNext()
+DA:32,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:44,0
+FN:76,System.Void TourManagement.Application.Services.BookingService/<GetBookingByIdAsync>d__8::MoveNext()
+FNDA:0,System.Void TourManagement.Application.Services.BookingService/<GetBookingByIdAsync>d__8::MoveNext()
+DA:77,0
+DA:79,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:89,0
+BRDA:82,220,0,0
+BRDA:82,220,1,0
+FN:61,System.Void TourManagement.Application.Services.BookingService/<GetBookingsByTourIdAsync>d__7::MoveNext()
+FNDA:0,System.Void TourManagement.Application.Services.BookingService/<GetBookingsByTourIdAsync>d__7::MoveNext()
+DA:62,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:74,0
+FN:46,System.Void TourManagement.Application.Services.BookingService/<GetBookingsByUserIdAsync>d__6::MoveNext()
+FNDA:0,System.Void TourManagement.Application.Services.BookingService/<GetBookingsByUserIdAsync>d__6::MoveNext()
+DA:47,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:54,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:59,0
+FN:203,System.Void TourManagement.Application.Services.BookingService/<MapToDtoAsync>d__12::MoveNext()
+FNDA:0,System.Void TourManagement.Application.Services.BookingService/<MapToDtoAsync>d__12::MoveNext()
+DA:204,0
+DA:205,0
+DA:206,0
+DA:208,0
+DA:209,0
+DA:210,0
+DA:211,0
+DA:212,0
+DA:213,0
+DA:214,0
+DA:215,0
+DA:216,0
+DA:217,0
+DA:218,0
+DA:219,0
+DA:220,0
+DA:221,0
+BRDA:208,377,0,0
+BRDA:208,377,1,0
+BRDA:208,432,0,0
+BRDA:208,432,1,0
+BRDA:208,444,0,0
+BRDA:208,444,1,0
+FN:223,System.Void TourManagement.Application.Services.BookingService/<MapToDtoListAsync>d__13::MoveNext()
+FNDA:0,System.Void TourManagement.Application.Services.BookingService/<MapToDtoListAsync>d__13::MoveNext()
+DA:224,0
+DA:225,0
+DA:226,0
+DA:227,0
+DA:228,0
+DA:229,0
+DA:230,0
+DA:231,0
+BRDA:226,250,1,0
+BRDA:226,250,0,0
+FN:140,System.Void TourManagement.Application.Services.BookingService/<UpdateBookingStatusAsync>d__10::MoveNext()
+FNDA:0,System.Void TourManagement.Application.Services.BookingService/<UpdateBookingStatusAsync>d__10::MoveNext()
+DA:141,0
+DA:143,0
+DA:144,0
+DA:145,0
+DA:147,0
+DA:148,0
+DA:149,0
+DA:150,0
+DA:151,0
+DA:154,0
+DA:155,0
+DA:157,0
+DA:158,0
+DA:159,0
+DA:160,0
+DA:162,0
+DA:163,0
+DA:165,0
+DA:167,0
+DA:168,0
+DA:169,0
+DA:170,0
+DA:172,0
+BRDA:148,268,0,0
+BRDA:148,268,1,0
+BRDA:157,396,0,0
+BRDA:157,396,1,0
+LF:151
+LH:0
+BRF:28
+BRH:0
+FNF:10
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP1465/transformed-code/85/studio-workspace/backenddot/src/TourManagement.Application/Services/TourService.cs
+FN:174,TourManagement.Application.DTOs.TourDto TourManagement.Application.Services.TourService::MapToDto(TourManagement.Domain.Entities.Tour)
+FNDA:4,TourManagement.Application.DTOs.TourDto TourManagement.Application.Services.TourService::MapToDto(TourManagement.Domain.Entities.Tour)
+DA:175,4
+DA:176,4
+DA:177,4
+DA:178,4
+DA:179,4
+DA:180,4
+DA:181,4
+DA:182,4
+DA:183,4
+DA:184,4
+DA:185,4
+DA:186,4
+DA:187,4
+DA:188,4
+FN:16,System.Void TourManagement.Application.Services.TourService::.ctor(TourManagement.Infrastructure.Interfaces.ITourRepository,Microsoft.Extensions.Logging.ILogger`1<TourManagement.Application.Services.TourService>)
+FNDA:5,System.Void TourManagement.Application.Services.TourService::.ctor(TourManagement.Infrastructure.Interfaces.ITourRepository,Microsoft.Extensions.Logging.ILogger`1<TourManagement.Application.Services.TourService>)
+DA:17,5
+DA:18,5
+DA:19,5
+DA:20,5
+DA:21,5
+BRDA:19,11,0,0
+BRDA:19,11,1,5
+BRDA:20,33,0,0
+BRDA:20,33,1,5
+FN:68,System.Void TourManagement.Application.Services.TourService/<CreateTourAsync>d__6::MoveNext()
+FNDA:1,System.Void TourManagement.Application.Services.TourService/<CreateTourAsync>d__6::MoveNext()
+DA:69,1
+DA:71,1
+DA:72,1
+DA:74,1
+DA:75,1
+DA:76,1
+DA:77,1
+DA:78,1
+DA:79,1
+DA:80,1
+DA:81,1
+DA:82,1
+DA:83,1
+DA:84,1
+DA:85,1
+DA:87,1
+DA:88,1
+DA:90,1
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:97,1
+FN:134,System.Void TourManagement.Application.Services.TourService/<DeleteTourAsync>d__8::MoveNext()
+FNDA:1,System.Void TourManagement.Application.Services.TourService/<DeleteTourAsync>d__8::MoveNext()
+DA:135,1
+DA:137,1
+DA:138,1
+DA:139,1
+DA:141,1
+DA:142,1
+DA:143,1
+DA:144,1
+DA:146,0
+DA:147,0
+DA:148,0
+DA:150,1
+DA:152,0
+DA:153,0
+DA:154,0
+DA:155,0
+DA:157,1
+BRDA:141,205,0,1
+BRDA:141,205,1,0
+FN:38,System.Void TourManagement.Application.Services.TourService/<GetActiveToursAsync>d__4::MoveNext()
+FNDA:0,System.Void TourManagement.Application.Services.TourService/<GetActiveToursAsync>d__4::MoveNext()
+DA:39,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:51,0
+FN:23,System.Void TourManagement.Application.Services.TourService/<GetAllToursAsync>d__3::MoveNext()
+FNDA:1,System.Void TourManagement.Application.Services.TourService/<GetAllToursAsync>d__3::MoveNext()
+DA:24,1
+DA:26,1
+DA:27,1
+DA:28,1
+DA:29,1
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:36,1
+FN:53,System.Void TourManagement.Application.Services.TourService/<GetTourByIdAsync>d__5::MoveNext()
+FNDA:2,System.Void TourManagement.Application.Services.TourService/<GetTourByIdAsync>d__5::MoveNext()
+DA:54,2
+DA:56,2
+DA:57,2
+DA:58,2
+DA:59,2
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:66,2
+BRDA:59,208,0,1
+BRDA:59,208,1,1
+FN:159,System.Void TourManagement.Application.Services.TourService/<SearchToursAsync>d__9::MoveNext()
+FNDA:0,System.Void TourManagement.Application.Services.TourService/<SearchToursAsync>d__9::MoveNext()
+DA:160,0
+DA:162,0
+DA:163,0
+DA:164,0
+DA:165,0
+DA:167,0
+DA:168,0
+DA:169,0
+DA:170,0
+DA:172,0
+FN:99,System.Void TourManagement.Application.Services.TourService/<UpdateTourAsync>d__7::MoveNext()
+FNDA:0,System.Void TourManagement.Application.Services.TourService/<UpdateTourAsync>d__7::MoveNext()
+DA:100,0
+DA:102,0
+DA:103,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:112,0
+DA:113,0
+DA:114,0
+DA:115,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:122,0
+DA:123,0
+DA:125,0
+DA:127,0
+DA:128,0
+DA:129,0
+DA:130,0
+DA:132,0
+BRDA:106,240,0,0
+BRDA:106,240,1,0
+LF:124
+LH:60
+BRF:10
+BRH:5
+FNF:9
+FNH:6
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP1465/transformed-code/85/studio-workspace/backenddot/src/TourManagement.Application/Services/UserService.cs
+FN:256,TourManagement.Application.DTOs.UserDto TourManagement.Application.Services.UserService::MapToDto(TourManagement.Domain.Entities.User)
+FNDA:0,TourManagement.Application.DTOs.UserDto TourManagement.Application.Services.UserService::MapToDto(TourManagement.Domain.Entities.User)
+DA:257,0
+DA:258,0
+DA:259,0
+DA:260,0
+DA:261,0
+DA:262,0
+DA:263,0
+DA:264,0
+DA:265,0
+DA:266,0
+DA:267,0
+DA:268,0
+DA:269,0
+FN:272,System.String TourManagement.Application.Services.UserService::HashPassword(System.String)
+FNDA:0,System.String TourManagement.Application.Services.UserService::HashPassword(System.String)
+DA:273,0
+DA:274,0
+DA:275,0
+DA:276,0
+DA:277,0
+FN:279,System.Boolean TourManagement.Application.Services.UserService::VerifyPassword(System.String,System.String)
+FNDA:0,System.Boolean TourManagement.Application.Services.UserService::VerifyPassword(System.String,System.String)
+DA:280,0
+DA:281,0
+DA:282,0
+DA:283,0
+FN:285,System.String TourManagement.Application.Services.UserService::GenerateToken(TourManagement.Domain.Entities.User)
+FNDA:0,System.String TourManagement.Application.Services.UserService::GenerateToken(TourManagement.Domain.Entities.User)
+DA:286,0
+DA:288,0
+DA:289,0
+FN:16,System.Void TourManagement.Application.Services.UserService::.ctor(TourManagement.Infrastructure.Interfaces.IUserRepository,Microsoft.Extensions.Logging.ILogger`1<TourManagement.Application.Services.UserService>)
+FNDA:0,System.Void TourManagement.Application.Services.UserService::.ctor(TourManagement.Infrastructure.Interfaces.IUserRepository,Microsoft.Extensions.Logging.ILogger`1<TourManagement.Application.Services.UserService>)
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+BRDA:19,11,0,0
+BRDA:19,11,1,0
+BRDA:20,33,0,0
+BRDA:20,33,1,0
+FN:222,System.Void TourManagement.Application.Services.UserService/<ChangePasswordAsync>d__10::MoveNext()
+FNDA:0,System.Void TourManagement.Application.Services.UserService/<ChangePasswordAsync>d__10::MoveNext()
+DA:223,0
+DA:225,0
+DA:226,0
+DA:228,0
+DA:229,0
+DA:230,0
+DA:231,0
+DA:232,0
+DA:235,0
+DA:236,0
+DA:237,0
+DA:238,0
+DA:241,0
+DA:242,0
+DA:244,0
+DA:245,0
+DA:247,0
+DA:249,0
+DA:250,0
+DA:251,0
+DA:252,0
+DA:254,0
+BRDA:229,227,0,0
+BRDA:229,227,1,0
+BRDA:235,308,0,0
+BRDA:235,308,1,0
+FN:197,System.Void TourManagement.Application.Services.UserService/<DeleteUserAsync>d__9::MoveNext()
+FNDA:0,System.Void TourManagement.Application.Services.UserService/<DeleteUserAsync>d__9::MoveNext()
+DA:198,0
+DA:200,0
+DA:201,0
+DA:202,0
+DA:204,0
+DA:205,0
+DA:206,0
+DA:207,0
+DA:209,0
+DA:210,0
+DA:211,0
+DA:213,0
+DA:215,0
+DA:216,0
+DA:217,0
+DA:218,0
+DA:220,0
+BRDA:204,205,0,0
+BRDA:204,205,1,0
+FN:53,System.Void TourManagement.Application.Services.UserService/<GetAllUsersAsync>d__5::MoveNext()
+FNDA:0,System.Void TourManagement.Application.Services.UserService/<GetAllUsersAsync>d__5::MoveNext()
+DA:54,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:66,0
+FN:38,System.Void TourManagement.Application.Services.UserService/<GetUserByEmailAsync>d__4::MoveNext()
+FNDA:0,System.Void TourManagement.Application.Services.UserService/<GetUserByEmailAsync>d__4::MoveNext()
+DA:39,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:51,0
+BRDA:44,203,0,0
+BRDA:44,203,1,0
+FN:23,System.Void TourManagement.Application.Services.UserService/<GetUserByIdAsync>d__3::MoveNext()
+FNDA:0,System.Void TourManagement.Application.Services.UserService/<GetUserByIdAsync>d__3::MoveNext()
+DA:24,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:36,0
+BRDA:29,208,0,0
+BRDA:29,208,1,0
+FN:110,System.Void TourManagement.Application.Services.UserService/<LoginAsync>d__7::MoveNext()
+FNDA:0,System.Void TourManagement.Application.Services.UserService/<LoginAsync>d__7::MoveNext()
+DA:111,0
+DA:113,0
+DA:114,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:124,0
+DA:128,0
+DA:129,0
+DA:130,0
+DA:131,0
+DA:132,0
+DA:133,0
+DA:134,0
+DA:135,0
+DA:138,0
+DA:139,0
+DA:140,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:145,0
+DA:148,0
+DA:150,0
+DA:151,0
+DA:152,0
+DA:153,0
+DA:154,0
+DA:155,0
+DA:156,0
+DA:158,0
+DA:159,0
+DA:160,0
+DA:161,0
+DA:163,0
+BRDA:117,220,0,0
+BRDA:117,220,1,0
+BRDA:128,330,0,0
+BRDA:128,330,1,0
+BRDA:138,424,0,0
+BRDA:138,424,1,0
+FN:68,System.Void TourManagement.Application.Services.UserService/<RegisterUserAsync>d__6::MoveNext()
+FNDA:0,System.Void TourManagement.Application.Services.UserService/<RegisterUserAsync>d__6::MoveNext()
+DA:69,0
+DA:71,0
+DA:72,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:79,0
+DA:83,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:98,0
+DA:99,0
+DA:101,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:108,0
+BRDA:76,235,0,0
+BRDA:76,235,1,0
+FN:165,System.Void TourManagement.Application.Services.UserService/<UpdateUserAsync>d__8::MoveNext()
+FNDA:0,System.Void TourManagement.Application.Services.UserService/<UpdateUserAsync>d__8::MoveNext()
+DA:166,0
+DA:168,0
+DA:169,0
+DA:171,0
+DA:172,0
+DA:173,0
+DA:174,0
+DA:175,0
+DA:178,0
+DA:179,0
+DA:180,0
+DA:181,0
+DA:182,0
+DA:183,0
+DA:185,0
+DA:186,0
+DA:188,0
+DA:190,0
+DA:191,0
+DA:192,0
+DA:193,0
+DA:195,0
+BRDA:172,227,0,0
+BRDA:172,227,1,0
+LF:191
+LH:0
+BRF:24
+BRH:0
+FNF:13
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP1465/transformed-code/85/studio-workspace/backenddot/src/TourManagement.Application/DTOs/BookingDto.cs
+FN:7,System.Int32 TourManagement.Application.DTOs.BookingDto::get_Id()
+FNDA:0,System.Int32 TourManagement.Application.DTOs.BookingDto::get_Id()
+DA:8,0
+FN:8,System.Int32 TourManagement.Application.DTOs.BookingDto::get_UserId()
+FNDA:0,System.Int32 TourManagement.Application.DTOs.BookingDto::get_UserId()
+DA:9,0
+FN:9,System.Int32 TourManagement.Application.DTOs.BookingDto::get_TourId()
+FNDA:0,System.Int32 TourManagement.Application.DTOs.BookingDto::get_TourId()
+DA:10,0
+FN:10,System.String TourManagement.Application.DTOs.BookingDto::get_UserName()
+FNDA:0,System.String TourManagement.Application.DTOs.BookingDto::get_UserName()
+DA:11,0
+FN:11,System.String TourManagement.Application.DTOs.BookingDto::get_TourName()
+FNDA:0,System.String TourManagement.Application.DTOs.BookingDto::get_TourName()
+DA:12,0
+FN:12,System.DateTime TourManagement.Application.DTOs.BookingDto::get_BookingDate()
+FNDA:0,System.DateTime TourManagement.Application.DTOs.BookingDto::get_BookingDate()
+DA:13,0
+FN:13,System.Int32 TourManagement.Application.DTOs.BookingDto::get_NumberOfPeople()
+FNDA:0,System.Int32 TourManagement.Application.DTOs.BookingDto::get_NumberOfPeople()
+DA:14,0
+FN:14,System.Decimal TourManagement.Application.DTOs.BookingDto::get_TotalAmount()
+FNDA:0,System.Decimal TourManagement.Application.DTOs.BookingDto::get_TotalAmount()
+DA:15,0
+FN:15,System.String TourManagement.Application.DTOs.BookingDto::get_Status()
+FNDA:0,System.String TourManagement.Application.DTOs.BookingDto::get_Status()
+DA:16,0
+FN:16,System.String TourManagement.Application.DTOs.BookingDto::get_SpecialRequests()
+FNDA:0,System.String TourManagement.Application.DTOs.BookingDto::get_SpecialRequests()
+DA:17,0
+FN:24,System.Int32 TourManagement.Application.DTOs.CreateBookingDto::get_UserId()
+FNDA:0,System.Int32 TourManagement.Application.DTOs.CreateBookingDto::get_UserId()
+DA:25,0
+FN:25,System.Int32 TourManagement.Application.DTOs.CreateBookingDto::get_TourId()
+FNDA:0,System.Int32 TourManagement.Application.DTOs.CreateBookingDto::get_TourId()
+DA:26,0
+FN:26,System.DateTime TourManagement.Application.DTOs.CreateBookingDto::get_BookingDate()
+FNDA:0,System.DateTime TourManagement.Application.DTOs.CreateBookingDto::get_BookingDate()
+DA:27,0
+FN:27,System.Int32 TourManagement.Application.DTOs.CreateBookingDto::get_NumberOfPeople()
+FNDA:0,System.Int32 TourManagement.Application.DTOs.CreateBookingDto::get_NumberOfPeople()
+DA:28,0
+FN:28,System.String TourManagement.Application.DTOs.CreateBookingDto::get_SpecialRequests()
+FNDA:0,System.String TourManagement.Application.DTOs.CreateBookingDto::get_SpecialRequests()
+DA:29,0
+FN:36,System.Int32 TourManagement.Application.DTOs.UpdateBookingStatusDto::get_Id()
+FNDA:0,System.Int32 TourManagement.Application.DTOs.UpdateBookingStatusDto::get_Id()
+DA:37,0
+FN:37,System.String TourManagement.Application.DTOs.UpdateBookingStatusDto::get_Status()
+FNDA:0,System.String TourManagement.Application.DTOs.UpdateBookingStatusDto::get_Status()
+DA:38,0
+LF:17
+LH:0
+BRF:0
+BRH:0
+FNF:17
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP1465/transformed-code/85/studio-workspace/backenddot/src/TourManagement.Application/DTOs/TourDto.cs
+FN:7,System.Int32 TourManagement.Application.DTOs.TourDto::get_Id()
+FNDA:4,System.Int32 TourManagement.Application.DTOs.TourDto::get_Id()
+DA:8,4
+FN:8,System.String TourManagement.Application.DTOs.TourDto::get_TourName()
+FNDA:10,System.String TourManagement.Application.DTOs.TourDto::get_TourName()
+DA:9,10
+FN:9,System.String TourManagement.Application.DTOs.TourDto::get_Place()
+FNDA:8,System.String TourManagement.Application.DTOs.TourDto::get_Place()
+DA:10,8
+FN:10,System.Int32 TourManagement.Application.DTOs.TourDto::get_Days()
+FNDA:4,System.Int32 TourManagement.Application.DTOs.TourDto::get_Days()
+DA:11,4
+FN:11,System.Decimal TourManagement.Application.DTOs.TourDto::get_Price()
+FNDA:4,System.Decimal TourManagement.Application.DTOs.TourDto::get_Price()
+DA:12,4
+FN:12,System.String TourManagement.Application.DTOs.TourDto::get_Locations()
+FNDA:8,System.String TourManagement.Application.DTOs.TourDto::get_Locations()
+DA:13,8
+FN:13,System.String TourManagement.Application.DTOs.TourDto::get_TourInfo()
+FNDA:8,System.String TourManagement.Application.DTOs.TourDto::get_TourInfo()
+DA:14,8
+FN:14,System.String TourManagement.Application.DTOs.TourDto::get_PicturePath()
+FNDA:4,System.String TourManagement.Application.DTOs.TourDto::get_PicturePath()
+DA:15,4
+FN:15,System.Boolean TourManagement.Application.DTOs.TourDto::get_IsActive()
+FNDA:4,System.Boolean TourManagement.Application.DTOs.TourDto::get_IsActive()
+DA:16,4
+FN:23,System.String TourManagement.Application.DTOs.CreateTourDto::get_TourName()
+FNDA:5,System.String TourManagement.Application.DTOs.CreateTourDto::get_TourName()
+DA:24,5
+FN:24,System.String TourManagement.Application.DTOs.CreateTourDto::get_Place()
+FNDA:4,System.String TourManagement.Application.DTOs.CreateTourDto::get_Place()
+DA:25,4
+FN:25,System.Int32 TourManagement.Application.DTOs.CreateTourDto::get_Days()
+FNDA:3,System.Int32 TourManagement.Application.DTOs.CreateTourDto::get_Days()
+DA:26,3
+FN:26,System.Decimal TourManagement.Application.DTOs.CreateTourDto::get_Price()
+FNDA:3,System.Decimal TourManagement.Application.DTOs.CreateTourDto::get_Price()
+DA:27,3
+FN:27,System.String TourManagement.Application.DTOs.CreateTourDto::get_Locations()
+FNDA:4,System.String TourManagement.Application.DTOs.CreateTourDto::get_Locations()
+DA:28,4
+FN:28,System.String TourManagement.Application.DTOs.CreateTourDto::get_TourInfo()
+FNDA:4,System.String TourManagement.Application.DTOs.CreateTourDto::get_TourInfo()
+DA:29,4
+FN:29,System.String TourManagement.Application.DTOs.CreateTourDto::get_PicturePath()
+FNDA:1,System.String TourManagement.Application.DTOs.CreateTourDto::get_PicturePath()
+DA:30,1
+FN:37,System.Int32 TourManagement.Application.DTOs.UpdateTourDto::get_Id()
+FNDA:0,System.Int32 TourManagement.Application.DTOs.UpdateTourDto::get_Id()
+DA:38,0
+FN:38,System.String TourManagement.Application.DTOs.UpdateTourDto::get_TourName()
+FNDA:0,System.String TourManagement.Application.DTOs.UpdateTourDto::get_TourName()
+DA:39,0
+FN:39,System.String TourManagement.Application.DTOs.UpdateTourDto::get_Place()
+FNDA:0,System.String TourManagement.Application.DTOs.UpdateTourDto::get_Place()
+DA:40,0
+FN:40,System.Int32 TourManagement.Application.DTOs.UpdateTourDto::get_Days()
+FNDA:0,System.Int32 TourManagement.Application.DTOs.UpdateTourDto::get_Days()
+DA:41,0
+FN:41,System.Decimal TourManagement.Application.DTOs.UpdateTourDto::get_Price()
+FNDA:0,System.Decimal TourManagement.Application.DTOs.UpdateTourDto::get_Price()
+DA:42,0
+FN:42,System.String TourManagement.Application.DTOs.UpdateTourDto::get_Locations()
+FNDA:0,System.String TourManagement.Application.DTOs.UpdateTourDto::get_Locations()
+DA:43,0
+FN:43,System.String TourManagement.Application.DTOs.UpdateTourDto::get_TourInfo()
+FNDA:0,System.String TourManagement.Application.DTOs.UpdateTourDto::get_TourInfo()
+DA:44,0
+FN:44,System.String TourManagement.Application.DTOs.UpdateTourDto::get_PicturePath()
+FNDA:0,System.String TourManagement.Application.DTOs.UpdateTourDto::get_PicturePath()
+DA:45,0
+FN:45,System.Boolean TourManagement.Application.DTOs.UpdateTourDto::get_IsActive()
+FNDA:0,System.Boolean TourManagement.Application.DTOs.UpdateTourDto::get_IsActive()
+DA:46,0
+LF:25
+LH:16
+BRF:0
+BRH:0
+FNF:25
+FNH:16
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP1465/transformed-code/85/studio-workspace/backenddot/src/TourManagement.Application/DTOs/UserDto.cs
+FN:7,System.Int32 TourManagement.Application.DTOs.UserDto::get_Id()
+FNDA:0,System.Int32 TourManagement.Application.DTOs.UserDto::get_Id()
+DA:8,0
+FN:8,System.String TourManagement.Application.DTOs.UserDto::get_Email()
+FNDA:0,System.String TourManagement.Application.DTOs.UserDto::get_Email()
+DA:9,0
+FN:9,System.String TourManagement.Application.DTOs.UserDto::get_FirstName()
+FNDA:0,System.String TourManagement.Application.DTOs.UserDto::get_FirstName()
+DA:10,0
+FN:10,System.String TourManagement.Application.DTOs.UserDto::get_LastName()
+FNDA:0,System.String TourManagement.Application.DTOs.UserDto::get_LastName()
+DA:11,0
+FN:11,System.String TourManagement.Application.DTOs.UserDto::get_PhoneNumber()
+FNDA:0,System.String TourManagement.Application.DTOs.UserDto::get_PhoneNumber()
+DA:12,0
+FN:12,System.String TourManagement.Application.DTOs.UserDto::get_Address()
+FNDA:0,System.String TourManagement.Application.DTOs.UserDto::get_Address()
+DA:13,0
+FN:13,System.String TourManagement.Application.DTOs.UserDto::get_Role()
+FNDA:0,System.String TourManagement.Application.DTOs.UserDto::get_Role()
+DA:14,0
+FN:14,System.Boolean TourManagement.Application.DTOs.UserDto::get_IsActive()
+FNDA:0,System.Boolean TourManagement.Application.DTOs.UserDto::get_IsActive()
+DA:15,0
+FN:22,System.String TourManagement.Application.DTOs.RegisterUserDto::get_Email()
+FNDA:0,System.String TourManagement.Application.DTOs.RegisterUserDto::get_Email()
+DA:23,0
+FN:23,System.String TourManagement.Application.DTOs.RegisterUserDto::get_Password()
+FNDA:0,System.String TourManagement.Application.DTOs.RegisterUserDto::get_Password()
+DA:24,0
+FN:24,System.String TourManagement.Application.DTOs.RegisterUserDto::get_FirstName()
+FNDA:0,System.String TourManagement.Application.DTOs.RegisterUserDto::get_FirstName()
+DA:25,0
+FN:25,System.String TourManagement.Application.DTOs.RegisterUserDto::get_LastName()
+FNDA:0,System.String TourManagement.Application.DTOs.RegisterUserDto::get_LastName()
+DA:26,0
+FN:26,System.String TourManagement.Application.DTOs.RegisterUserDto::get_PhoneNumber()
+FNDA:0,System.String TourManagement.Application.DTOs.RegisterUserDto::get_PhoneNumber()
+DA:27,0
+FN:27,System.String TourManagement.Application.DTOs.RegisterUserDto::get_Address()
+FNDA:0,System.String TourManagement.Application.DTOs.RegisterUserDto::get_Address()
+DA:28,0
+FN:35,System.String TourManagement.Application.DTOs.LoginDto::get_Email()
+FNDA:0,System.String TourManagement.Application.DTOs.LoginDto::get_Email()
+DA:36,0
+FN:36,System.String TourManagement.Application.DTOs.LoginDto::get_Password()
+FNDA:0,System.String TourManagement.Application.DTOs.LoginDto::get_Password()
+DA:37,0
+FN:44,System.Boolean TourManagement.Application.DTOs.LoginResponseDto::get_Success()
+FNDA:0,System.Boolean TourManagement.Application.DTOs.LoginResponseDto::get_Success()
+DA:45,0
+FN:45,System.String TourManagement.Application.DTOs.LoginResponseDto::get_Message()
+FNDA:0,System.String TourManagement.Application.DTOs.LoginResponseDto::get_Message()
+DA:46,0
+FN:46,TourManagement.Application.DTOs.UserDto TourManagement.Application.DTOs.LoginResponseDto::get_User()
+FNDA:0,TourManagement.Application.DTOs.UserDto TourManagement.Application.DTOs.LoginResponseDto::get_User()
+DA:47,0
+FN:47,System.String TourManagement.Application.DTOs.LoginResponseDto::get_Token()
+FNDA:0,System.String TourManagement.Application.DTOs.LoginResponseDto::get_Token()
+DA:48,0
+LF:20
+LH:0
+BRF:0
+BRH:0
+FNF:20
+FNH:0
+end_of_record
