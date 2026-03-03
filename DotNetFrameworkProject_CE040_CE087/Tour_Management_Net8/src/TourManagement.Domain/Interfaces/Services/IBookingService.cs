@@ -1,6 +1,9 @@
 using TourManagement.Domain.DTOs;
 /// <summary>
+
+namespace TourManagement.Domain.Interfaces.Services;
 /// Service interface for Booking business operations
+
 /// </summary>
 public interface IBookingService
 {

@@ -1,5 +1,7 @@
 using TourManagement.Domain.DTOs;
+using AutoMapper;
 
+using TourManagement.Domain.Entities;
 /// <summary>
 /// AutoMapper profile for entity to DTO mappings
 /// </summary>

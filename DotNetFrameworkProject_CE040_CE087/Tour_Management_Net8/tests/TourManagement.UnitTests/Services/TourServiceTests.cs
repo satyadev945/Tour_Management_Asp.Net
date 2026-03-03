@@ -1,6 +1,12 @@
 using AutoMapper;
 using FluentAssertions;
+using Microsoft.Extensions.Logging;
+using Moq;
+using TourManagement.Application.Services;
 using TourManagement.Domain.DTOs;
+using TourManagement.Domain.Entities;
+using TourManagement.Domain.Interfaces.Repositories;
+using Xunit;
 
 namespace TourManagement.UnitTests.Services;
 

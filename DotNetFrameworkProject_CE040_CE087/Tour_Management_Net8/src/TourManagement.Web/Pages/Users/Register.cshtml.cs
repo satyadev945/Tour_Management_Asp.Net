@@ -1,4 +1,9 @@
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using TourManagement.Domain.DTOs;
+using TourManagement.Domain.Interfaces.Services;
+using TourManagement.Web.ViewModels;
+
 namespace TourManagement.Web.Pages.Users;
 
 public class RegisterModel : PageModel

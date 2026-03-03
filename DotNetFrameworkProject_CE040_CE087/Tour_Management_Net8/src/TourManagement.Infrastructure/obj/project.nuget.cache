@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "IA6lgXXBeZ8=",
+  "dgSpecHash": "m/0teTBBGvY=",
   "success": true,
   "projectFilePath": "/modernize-data/studio-data/TNT1001/APP1151/transformed-code/38/studio-workspace/satyaTest/DotNetFrameworkProject_CE040_CE087/Tour_Management_Net8/src/TourManagement.Infrastructure/TourManagement.Infrastructure.csproj",
   "expectedPackageFiles": [
     "/app/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
+    "/app/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "/app/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/app/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",
     "/app/.nuget/packages/dapper/2.1.28/dapper.2.1.28.nupkg.sha512",
