@@ -117,14 +117,14 @@ namespace TourManagement.Web.Tests.Pages.Users
                 PhoneNumber = "1234567890"
             };
 
-            _mockUserService.Setup(s => s.CreateAsync(It.IsAny<UserCreateDto>()))
-                .Returns(Task.CompletedTask);
+            _mockUserService.Setup(s => s.CreateAsync(It.IsAny<UserCreateDto>(), It.IsAny<CancellationToken>()))
+                .ReturnsAsync(new UserDto { Id = 1, FirstName = "John", LastName = "Doe", PhoneNumber = "1234567890" });
 
             // Act
             var result = await _registerModel.OnPostAsync();
 
             // Assert
-            _mockUserService.Verify(s => s.CreateAsync(It.IsAny<UserCreateDto>()), Times.Once);
+            _mockUserService.Verify(s => s.CreateAsync(It.IsAny<UserCreateDto>(), It.IsAny<CancellationToken>()), Times.Once);
         }
 
         [Fact]
@@ -139,8 +139,8 @@ namespace TourManagement.Web.Tests.Pages.Users
                 LastName = "Doe"
             };
 
-            _mockUserService.Setup(s => s.CreateAsync(It.IsAny<UserCreateDto>()))
-                .Returns(Task.CompletedTask);
+            _mockUserService.Setup(s => s.CreateAsync(It.IsAny<UserCreateDto>(), It.IsAny<CancellationToken>()))
+                .ReturnsAsync(new UserDto { Id = 1, FirstName = "John", LastName = "Doe", PhoneNumber = "1234567890" });
 
             // Act
             var result = await _registerModel.OnPostAsync();
@@ -163,8 +163,8 @@ namespace TourManagement.Web.Tests.Pages.Users
                 LastName = "Doe"
             };
 
-            _mockUserService.Setup(s => s.CreateAsync(It.IsAny<UserCreateDto>()))
-                .Returns(Task.CompletedTask);
+            _mockUserService.Setup(s => s.CreateAsync(It.IsAny<UserCreateDto>(), It.IsAny<CancellationToken>()))
+                .ReturnsAsync(new UserDto { Id = 1, FirstName = "John", LastName = "Doe", PhoneNumber = "1234567890" });
 
             // Mock TempData
             _registerModel.TempData = new Microsoft.AspNetCore.Mvc.ViewFeatures.TempDataDictionary(
@@ -191,7 +191,7 @@ namespace TourManagement.Web.Tests.Pages.Users
             };
 
             var exception = new InvalidOperationException("Email already exists");
-            _mockUserService.Setup(s => s.CreateAsync(It.IsAny<UserCreateDto>()))
+            _mockUserService.Setup(s => s.CreateAsync(It.IsAny<UserCreateDto>(), It.IsAny<CancellationToken>()))
                 .ThrowsAsync(exception);
 
             // Act
@@ -221,7 +221,7 @@ namespace TourManagement.Web.Tests.Pages.Users
             };
 
             var exception = new InvalidOperationException("Email already exists");
-            _mockUserService.Setup(s => s.CreateAsync(It.IsAny<UserCreateDto>()))
+            _mockUserService.Setup(s => s.CreateAsync(It.IsAny<UserCreateDto>(), It.IsAny<CancellationToken>()))
                 .ThrowsAsync(exception);
 
             // Act
@@ -244,7 +244,7 @@ namespace TourManagement.Web.Tests.Pages.Users
             };
 
             var exception = new InvalidOperationException("Email already exists");
-            _mockUserService.Setup(s => s.CreateAsync(It.IsAny<UserCreateDto>()))
+            _mockUserService.Setup(s => s.CreateAsync(It.IsAny<UserCreateDto>(), It.IsAny<CancellationToken>()))
                 .ThrowsAsync(exception);
 
             // Act
@@ -269,7 +269,7 @@ namespace TourManagement.Web.Tests.Pages.Users
             };
 
             var exception = new Exception("Database error");
-            _mockUserService.Setup(s => s.CreateAsync(It.IsAny<UserCreateDto>()))
+            _mockUserService.Setup(s => s.CreateAsync(It.IsAny<UserCreateDto>(), It.IsAny<CancellationToken>()))
                 .ThrowsAsync(exception);
 
             // Act
@@ -299,7 +299,7 @@ namespace TourManagement.Web.Tests.Pages.Users
             };
 
             var exception = new Exception("Database error");
-            _mockUserService.Setup(s => s.CreateAsync(It.IsAny<UserCreateDto>()))
+            _mockUserService.Setup(s => s.CreateAsync(It.IsAny<UserCreateDto>(), It.IsAny<CancellationToken>()))
                 .ThrowsAsync(exception);
 
             // Act
@@ -323,9 +323,9 @@ namespace TourManagement.Web.Tests.Pages.Users
             };
 
             UserCreateDto? capturedDto = null;
-            _mockUserService.Setup(s => s.CreateAsync(It.IsAny<UserCreateDto>()))
+            _mockUserService.Setup(s => s.CreateAsync(It.IsAny<UserCreateDto>(), It.IsAny<CancellationToken>()))
                 .Callback<UserCreateDto>(dto => capturedDto = dto)
-                .Returns(Task.CompletedTask);
+                .ReturnsAsync(new UserDto { Id = 1, FirstName = "John", LastName = "Doe", PhoneNumber = "1234567890" });
 
             // Act
             await _registerModel.OnPostAsync();

@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Y3Bni0MkTaE=",
+  "dgSpecHash": "ETeeVNlM/bk=",
   "success": true,
   "projectFilePath": "/modernize-data/studio-data/TNT1001/APP1151/transformed-code/38/studio-workspace/satyaTest/DotNetFrameworkProject_CE040_CE087/Tour_Management_Net8/tests/TourManagement.UnitTests/TourManagement.UnitTests.csproj",
   "expectedPackageFiles": [
     "/app/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/app/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "/app/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
+    "/app/.nuget/packages/coverlet.msbuild/8.0.0/coverlet.msbuild.8.0.0.nupkg.sha512",
     "/app/.nuget/packages/fluentassertions/6.12.0/fluentassertions.6.12.0.nupkg.sha512",
     "/app/.nuget/packages/fluentvalidation/11.9.0/fluentvalidation.11.9.0.nupkg.sha512",
     "/app/.nuget/packages/microsoft.codecoverage/17.9.0/microsoft.codecoverage.17.9.0.nupkg.sha512",

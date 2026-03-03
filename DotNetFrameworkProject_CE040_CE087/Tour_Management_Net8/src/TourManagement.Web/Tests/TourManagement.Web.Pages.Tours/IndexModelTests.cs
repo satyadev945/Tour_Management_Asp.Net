@@ -97,13 +97,13 @@ namespace TourManagement.Web.Tests.Pages.Tours
             {
                 new TourDto { Id = 1, TourName = "Tour 1", Place = "Place 1", Days = 5, Price = 1000 }
             };
-            _mockTourService.Setup(s => s.GetAllAsync()).ReturnsAsync(tourDtos);
+            _mockTourService.Setup(s => s.GetAllAsync(It.IsAny<CancellationToken>())).ReturnsAsync(tourDtos);
 
             // Act
             await _indexModel.OnGetAsync();
 
             // Assert
-            _mockTourService.Verify(s => s.GetAllAsync(), Times.Once);
+            _mockTourService.Verify(s => s.GetAllAsync(It.IsAny<CancellationToken>()), Times.Once);
         }
 
         [Fact]
@@ -116,13 +116,13 @@ namespace TourManagement.Web.Tests.Pages.Tours
             {
                 new TourDto { Id = 1, TourName = "Paris Tour", Place = "Paris", Days = 5, Price = 1000 }
             };
-            _mockTourService.Setup(s => s.SearchAsync(searchTerm)).ReturnsAsync(tourDtos);
+            _mockTourService.Setup(s => s.SearchAsync(searchTerm, It.IsAny<CancellationToken>())).ReturnsAsync(tourDtos);
 
             // Act
             await _indexModel.OnGetAsync();
 
             // Assert
-            _mockTourService.Verify(s => s.SearchAsync(searchTerm), Times.Once);
+            _mockTourService.Verify(s => s.SearchAsync(searchTerm, It.IsAny<CancellationToken>()), Times.Once);
         }
 
         [Fact]
@@ -134,13 +134,13 @@ namespace TourManagement.Web.Tests.Pages.Tours
             {
                 new TourDto { Id = 1, TourName = "Tour 1", Place = "Place 1", Days = 5, Price = 1000 }
             };
-            _mockTourService.Setup(s => s.GetAllAsync()).ReturnsAsync(tourDtos);
+            _mockTourService.Setup(s => s.GetAllAsync(It.IsAny<CancellationToken>())).ReturnsAsync(tourDtos);
 
             // Act
             await _indexModel.OnGetAsync();
 
             // Assert
-            _mockTourService.Verify(s => s.GetAllAsync(), Times.Once);
+            _mockTourService.Verify(s => s.GetAllAsync(It.IsAny<CancellationToken>()), Times.Once);
         }
 
         [Fact]
@@ -152,13 +152,13 @@ namespace TourManagement.Web.Tests.Pages.Tours
             {
                 new TourDto { Id = 1, TourName = "Tour 1", Place = "Place 1", Days = 5, Price = 1000 }
             };
-            _mockTourService.Setup(s => s.GetAllAsync()).ReturnsAsync(tourDtos);
+            _mockTourService.Setup(s => s.GetAllAsync(It.IsAny<CancellationToken>())).ReturnsAsync(tourDtos);
 
             // Act
             await _indexModel.OnGetAsync();
 
             // Assert
-            _mockTourService.Verify(s => s.GetAllAsync(), Times.Once);
+            _mockTourService.Verify(s => s.GetAllAsync(It.IsAny<CancellationToken>()), Times.Once);
         }
 
         [Fact]
@@ -179,7 +179,7 @@ namespace TourManagement.Web.Tests.Pages.Tours
                     PictureFileName = "pic1.jpg"
                 }
             };
-            _mockTourService.Setup(s => s.GetAllAsync()).ReturnsAsync(tourDtos);
+            _mockTourService.Setup(s => s.GetAllAsync(It.IsAny<CancellationToken>())).ReturnsAsync(tourDtos);
 
             // Act
             await _indexModel.OnGetAsync();
@@ -204,7 +204,7 @@ namespace TourManagement.Web.Tests.Pages.Tours
                 new TourDto { Id = 2, TourName = "Tour 2", Place = "Place 2", Days = 7, Price = 2000 },
                 new TourDto { Id = 3, TourName = "Tour 3", Place = "Place 3", Days = 10, Price = 3000 }
             };
-            _mockTourService.Setup(s => s.GetAllAsync()).ReturnsAsync(tourDtos);
+            _mockTourService.Setup(s => s.GetAllAsync(It.IsAny<CancellationToken>())).ReturnsAsync(tourDtos);
 
             // Act
             await _indexModel.OnGetAsync();
@@ -218,7 +218,7 @@ namespace TourManagement.Web.Tests.Pages.Tours
         {
             // Arrange
             var exception = new Exception("Test exception");
-            _mockTourService.Setup(s => s.GetAllAsync()).ThrowsAsync(exception);
+            _mockTourService.Setup(s => s.GetAllAsync(It.IsAny<CancellationToken>())).ThrowsAsync(exception);
 
             // Act
             await _indexModel.OnGetAsync();
@@ -239,7 +239,7 @@ namespace TourManagement.Web.Tests.Pages.Tours
         {
             // Arrange
             var exception = new Exception("Test exception");
-            _mockTourService.Setup(s => s.GetAllAsync()).ThrowsAsync(exception);
+            _mockTourService.Setup(s => s.GetAllAsync(It.IsAny<CancellationToken>())).ThrowsAsync(exception);
 
             // Act
             await _indexModel.OnGetAsync();
@@ -254,7 +254,7 @@ namespace TourManagement.Web.Tests.Pages.Tours
         {
             // Arrange
             var tourDtos = new List<TourDto>();
-            _mockTourService.Setup(s => s.GetAllAsync()).ReturnsAsync(tourDtos);
+            _mockTourService.Setup(s => s.GetAllAsync(It.IsAny<CancellationToken>())).ReturnsAsync(tourDtos);
 
             // Act
             await _indexModel.OnGetAsync();
@@ -267,7 +267,7 @@ namespace TourManagement.Web.Tests.Pages.Tours
         public async Task OnGetAsync_ShouldNotThrowException_WhenServiceReturnsNull()
         {
             // Arrange
-            _mockTourService.Setup(s => s.GetAllAsync()).ReturnsAsync((IEnumerable<TourDto>)null!);
+            _mockTourService.Setup(s => s.GetAllAsync(It.IsAny<CancellationToken>())).ReturnsAsync((IEnumerable<TourDto>)null!);
 
             // Act
             Func<Task> act = async () => await _indexModel.OnGetAsync();

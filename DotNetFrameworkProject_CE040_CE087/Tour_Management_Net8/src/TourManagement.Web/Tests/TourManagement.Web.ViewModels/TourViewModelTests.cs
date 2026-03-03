@@ -3,6 +3,11 @@ using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Http;
 using TourManagement.Web.ViewModels;
 using FluentAssertions;
+using Moq;
+
+namespace TourManagement.Web.Tests.ViewModels
+{
+    public class TourViewModelTests
     {
         [Fact]
         public void TourViewModel_ShouldInstantiate_WithDefaultValues()

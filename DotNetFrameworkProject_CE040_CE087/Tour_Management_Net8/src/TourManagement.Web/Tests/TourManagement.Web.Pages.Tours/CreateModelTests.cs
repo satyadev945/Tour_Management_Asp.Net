@@ -146,14 +146,15 @@ namespace TourManagement.Web.Tests.Pages.Tours
                 TourInfo = "Test Info"
             };
 
-            _mockTourService.Setup(s => s.CreateAsync(It.IsAny<TourCreateDto>()))
-                .Returns(Task.CompletedTask);
+            var createdTour = new TourDto { Id = 1, TourName = "Test Tour", Place = "Test Place", Days = 5, Price = 1000 };
+            _mockTourService.Setup(s => s.CreateAsync(It.IsAny<TourCreateDto>(), It.IsAny<CancellationToken>()))
+                .ReturnsAsync(createdTour);
 
             // Act
             var result = await _createModel.OnPostAsync();
 
             // Assert
-            _mockTourService.Verify(s => s.CreateAsync(It.IsAny<TourCreateDto>()), Times.Once);
+            _mockTourService.Verify(s => s.CreateAsync(It.IsAny<TourCreateDto>(), It.IsAny<CancellationToken>()), Times.Once);
         }
 
         [Fact]
@@ -168,8 +169,9 @@ namespace TourManagement.Web.Tests.Pages.Tours
                 Price = 1000
             };
 
-            _mockTourService.Setup(s => s.CreateAsync(It.IsAny<TourCreateDto>()))
-                .Returns(Task.CompletedTask);
+            var createdTour = new TourDto { Id = 1, TourName = "Test Tour", Place = "Test Place", Days = 5, Price = 1000 };
+            _mockTourService.Setup(s => s.CreateAsync(It.IsAny<TourCreateDto>(), It.IsAny<CancellationToken>()))
+                .ReturnsAsync(createdTour);
 
             // Act
             var result = await _createModel.OnPostAsync();
@@ -193,7 +195,7 @@ namespace TourManagement.Web.Tests.Pages.Tours
             };
 
             var exception = new Exception("Test exception");
-            _mockTourService.Setup(s => s.CreateAsync(It.IsAny<TourCreateDto>()))
+            _mockTourService.Setup(s => s.CreateAsync(It.IsAny<TourCreateDto>(), It.IsAny<CancellationToken>()))
                 .ThrowsAsync(exception);
 
             // Act
@@ -223,7 +225,7 @@ namespace TourManagement.Web.Tests.Pages.Tours
             };
 
             var exception = new Exception("Test exception");
-            _mockTourService.Setup(s => s.CreateAsync(It.IsAny<TourCreateDto>()))
+            _mockTourService.Setup(s => s.CreateAsync(It.IsAny<TourCreateDto>(), It.IsAny<CancellationToken>()))
                 .ThrowsAsync(exception);
 
             // Act
@@ -246,7 +248,7 @@ namespace TourManagement.Web.Tests.Pages.Tours
             };
 
             var exception = new Exception("Test exception");
-            _mockTourService.Setup(s => s.CreateAsync(It.IsAny<TourCreateDto>()))
+            _mockTourService.Setup(s => s.CreateAsync(It.IsAny<TourCreateDto>(), It.IsAny<CancellationToken>()))
                 .ThrowsAsync(exception);
 
             // Act
@@ -272,9 +274,10 @@ namespace TourManagement.Web.Tests.Pages.Tours
             };
 
             TourCreateDto? capturedDto = null;
-            _mockTourService.Setup(s => s.CreateAsync(It.IsAny<TourCreateDto>()))
-                .Callback<TourCreateDto>(dto => capturedDto = dto)
-                .Returns(Task.CompletedTask);
+            var createdTour = new TourDto { Id = 1, TourName = "Test Tour", Place = "Test Place", Days = 5, Price = 1000 };
+            _mockTourService.Setup(s => s.CreateAsync(It.IsAny<TourCreateDto>(), It.IsAny<CancellationToken>()))
+                .Callback<TourCreateDto, CancellationToken>((dto, ct) => capturedDto = dto)
+                .ReturnsAsync(createdTour);
 
             // Act
             await _createModel.OnPostAsync();
@@ -311,9 +314,10 @@ namespace TourManagement.Web.Tests.Pages.Tours
             };
 
             TourCreateDto? capturedDto = null;
-            _mockTourService.Setup(s => s.CreateAsync(It.IsAny<TourCreateDto>()))
-                .Callback<TourCreateDto>(dto => capturedDto = dto)
-                .Returns(Task.CompletedTask);
+            var createdTour = new TourDto { Id = 1, TourName = "Test Tour", Place = "Test Place", Days = 5, Price = 1000 };
+            _mockTourService.Setup(s => s.CreateAsync(It.IsAny<TourCreateDto>(), It.IsAny<CancellationToken>()))
+                .Callback<TourCreateDto, CancellationToken>((dto, ct) => capturedDto = dto)
+                .ReturnsAsync(createdTour);
 
             // Act
             await _createModel.OnPostAsync();
@@ -335,8 +339,9 @@ namespace TourManagement.Web.Tests.Pages.Tours
                 Price = 1000
             };
 
-            _mockTourService.Setup(s => s.CreateAsync(It.IsAny<TourCreateDto>()))
-                .Returns(Task.CompletedTask);
+            var createdTour = new TourDto { Id = 1, TourName = "Test Tour", Place = "Test Place", Days = 5, Price = 1000 };
+            _mockTourService.Setup(s => s.CreateAsync(It.IsAny<TourCreateDto>(), It.IsAny<CancellationToken>()))
+                .ReturnsAsync(createdTour);
 
             // Mock TempData
             _createModel.TempData = new Microsoft.AspNetCore.Mvc.ViewFeatures.TempDataDictionary(

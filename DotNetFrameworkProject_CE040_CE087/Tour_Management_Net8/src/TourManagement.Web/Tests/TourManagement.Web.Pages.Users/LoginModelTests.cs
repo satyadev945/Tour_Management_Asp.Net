@@ -130,14 +130,14 @@ namespace TourManagement.Web.Tests.Pages.Users
                 LastName = "Doe"
             };
 
-            _mockUserService.Setup(s => s.ValidateLoginAsync(It.IsAny<UserLoginDto>()))
+            _mockUserService.Setup(s => s.ValidateLoginAsync(It.IsAny<UserLoginDto>(), It.IsAny<CancellationToken>()))
                 .ReturnsAsync(userDto);
 
             // Act
             var result = await _loginModel.OnPostAsync();
 
             // Assert
-            _mockUserService.Verify(s => s.ValidateLoginAsync(It.IsAny<UserLoginDto>()), Times.Once);
+            _mockUserService.Verify(s => s.ValidateLoginAsync(It.IsAny<UserLoginDto>(), It.IsAny<CancellationToken>()), Times.Once);
         }
 
         [Fact]
@@ -158,7 +158,7 @@ namespace TourManagement.Web.Tests.Pages.Users
                 LastName = "Doe"
             };
 
-            _mockUserService.Setup(s => s.ValidateLoginAsync(It.IsAny<UserLoginDto>()))
+            _mockUserService.Setup(s => s.ValidateLoginAsync(It.IsAny<UserLoginDto>(), It.IsAny<CancellationToken>()))
                 .ReturnsAsync(userDto);
 
             // Act
@@ -188,7 +188,7 @@ namespace TourManagement.Web.Tests.Pages.Users
                 LastName = "Doe"
             };
 
-            _mockUserService.Setup(s => s.ValidateLoginAsync(It.IsAny<UserLoginDto>()))
+            _mockUserService.Setup(s => s.ValidateLoginAsync(It.IsAny<UserLoginDto>(), It.IsAny<CancellationToken>()))
                 .ReturnsAsync(userDto);
 
             // Act
@@ -216,7 +216,7 @@ namespace TourManagement.Web.Tests.Pages.Users
                 LastName = "Doe"
             };
 
-            _mockUserService.Setup(s => s.ValidateLoginAsync(It.IsAny<UserLoginDto>()))
+            _mockUserService.Setup(s => s.ValidateLoginAsync(It.IsAny<UserLoginDto>(), It.IsAny<CancellationToken>()))
                 .ReturnsAsync(userDto);
 
             // Act
@@ -236,7 +236,7 @@ namespace TourManagement.Web.Tests.Pages.Users
                 Password = "WrongPassword"
             };
 
-            _mockUserService.Setup(s => s.ValidateLoginAsync(It.IsAny<UserLoginDto>()))
+            _mockUserService.Setup(s => s.ValidateLoginAsync(It.IsAny<UserLoginDto>(), It.IsAny<CancellationToken>()))
                 .ReturnsAsync((UserDto?)null);
 
             // Act
@@ -256,7 +256,7 @@ namespace TourManagement.Web.Tests.Pages.Users
                 Password = "WrongPassword"
             };
 
-            _mockUserService.Setup(s => s.ValidateLoginAsync(It.IsAny<UserLoginDto>()))
+            _mockUserService.Setup(s => s.ValidateLoginAsync(It.IsAny<UserLoginDto>(), It.IsAny<CancellationToken>()))
                 .ReturnsAsync((UserDto?)null);
 
             // Act
@@ -279,7 +279,7 @@ namespace TourManagement.Web.Tests.Pages.Users
             };
 
             var exception = new Exception("Database error");
-            _mockUserService.Setup(s => s.ValidateLoginAsync(It.IsAny<UserLoginDto>()))
+            _mockUserService.Setup(s => s.ValidateLoginAsync(It.IsAny<UserLoginDto>(), It.IsAny<CancellationToken>()))
                 .ThrowsAsync(exception);
 
             // Act
@@ -307,7 +307,7 @@ namespace TourManagement.Web.Tests.Pages.Users
             };
 
             var exception = new Exception("Database error");
-            _mockUserService.Setup(s => s.ValidateLoginAsync(It.IsAny<UserLoginDto>()))
+            _mockUserService.Setup(s => s.ValidateLoginAsync(It.IsAny<UserLoginDto>(), It.IsAny<CancellationToken>()))
                 .ThrowsAsync(exception);
 
             // Act
@@ -328,7 +328,7 @@ namespace TourManagement.Web.Tests.Pages.Users
             };
 
             var exception = new Exception("Database error");
-            _mockUserService.Setup(s => s.ValidateLoginAsync(It.IsAny<UserLoginDto>()))
+            _mockUserService.Setup(s => s.ValidateLoginAsync(It.IsAny<UserLoginDto>(), It.IsAny<CancellationToken>()))
                 .ThrowsAsync(exception);
 
             // Act
@@ -351,7 +351,7 @@ namespace TourManagement.Web.Tests.Pages.Users
             };
 
             UserLoginDto? capturedDto = null;
-            _mockUserService.Setup(s => s.ValidateLoginAsync(It.IsAny<UserLoginDto>()))
+            _mockUserService.Setup(s => s.ValidateLoginAsync(It.IsAny<UserLoginDto>(), It.IsAny<CancellationToken>()))
                 .Callback<UserLoginDto>(dto => capturedDto = dto)
                 .ReturnsAsync(new UserDto { Id = 1, Email = "test@example.com" });
 
@@ -392,7 +392,7 @@ namespace TourManagement.Web.Tests.Pages.Users
                 LastName = "Doe"
             };
 
-            _mockUserService.Setup(s => s.ValidateLoginAsync(It.IsAny<UserLoginDto>()))
+            _mockUserService.Setup(s => s.ValidateLoginAsync(It.IsAny<UserLoginDto>(), It.IsAny<CancellationToken>()))
                 .ReturnsAsync(userDto);
 
             // Mock TempData
