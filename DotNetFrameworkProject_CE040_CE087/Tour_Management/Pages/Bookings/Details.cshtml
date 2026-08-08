@@ -1,0 +1,21 @@
+@page "{id:int}"
+@model Tour_Management.Pages.Bookings.DetailsModel
+@{
+    ViewData["Title"] = "Booking Details";
+}
+
+@if (Model.Booking is null)
+{
+    <div class="alert alert-warning">Booking not found.</div>
+}
+else
+{
+    <h1>Booking Details</h1>
+    <dl class="row">
+        <dt class="col-sm-3">Tour</dt><dd class="col-sm-9">@Model.Booking.TourName</dd>
+        <dt class="col-sm-3">Customer</dt><dd class="col-sm-9">@Model.Booking.CustomerName</dd>
+        <dt class="col-sm-3">Email</dt><dd class="col-sm-9">@Model.Booking.Email</dd>
+        <dt class="col-sm-3">Place</dt><dd class="col-sm-9">@Model.Booking.Place</dd>
+        <dt class="col-sm-3">Date</dt><dd class="col-sm-9">@Model.Booking.BookingDate.ToLocalTime()</dd>
+    </dl>
+}

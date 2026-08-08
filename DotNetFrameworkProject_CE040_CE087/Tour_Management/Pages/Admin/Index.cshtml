@@ -1,0 +1,18 @@
+@page
+@model Tour_Management.Pages.Admin.IndexModel
+@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<h1>Admin Dashboard</h1>
+<div class="row g-4">
+    <div class="col-md-4">
+        <div class="card shadow-sm"><div class="card-body"><h5>Tours</h5><p>@Model.TotalTours</p></div></div>
+    </div>
+    <div class="col-md-4">
+        <div class="card shadow-sm"><div class="card-body"><h5>Bookings</h5><p>@Model.TotalBookings</p></div></div>
+    </div>
+    <div class="col-md-4">
+        <div class="card shadow-sm"><div class="card-body"><h5>Actions</h5><a asp-page="/Tours/Create" class="btn btn-primary">Add Tour</a></div></div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+@page
+@model Tour_Management.Pages.Profile.IndexModel
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<h1>Profile</h1>
+@if (Model.Profile is null)
+{
+    <div class="alert alert-info">No profile found for the current user.</div>
+}
+else
+{
+    <dl class="row">
+        <dt class="col-sm-3">First Name</dt><dd class="col-sm-9">@Model.Profile.FirstName</dd>
+        <dt class="col-sm-3">Last Name</dt><dd class="col-sm-9">@Model.Profile.LastName</dd>
+        <dt class="col-sm-3">Gender</dt><dd class="col-sm-9">@Model.Profile.Gender</dd>
+        <dt class="col-sm-3">City</dt><dd class="col-sm-9">@Model.Profile.City</dd>
+        <dt class="col-sm-3">State</dt><dd class="col-sm-9">@Model.Profile.State</dd>
+    </dl>
+}
+<a class="btn btn-primary" asp-page="Edit">Edit Profile</a>
