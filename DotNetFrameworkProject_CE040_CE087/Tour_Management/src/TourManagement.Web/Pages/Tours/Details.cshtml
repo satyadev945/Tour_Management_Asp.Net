@@ -1,0 +1,18 @@
+@page "{id:int}"
+@model TourManagement.Web.Pages.Tours.DetailsModel
+@{
+    ViewData["Title"] = "Tour Details";
+}
+@if (Model.Tour is not null)
+{
+    <h1>@Model.Tour.Name</h1>
+    <img class="img-fluid rounded mb-3" src="@(Model.Tour.ImagePath ?? "https://via.placeholder.com/900x400")" alt="@Model.Tour.Name" />
+    <dl class="row">
+        <dt class="col-sm-3">Place</dt><dd class="col-sm-9">@Model.Tour.Place</dd>
+        <dt class="col-sm-3">Days</dt><dd class="col-sm-9">@Model.Tour.Days</dd>
+        <dt class="col-sm-3">Price</dt><dd class="col-sm-9">@Model.Tour.Price.ToString("C")</dd>
+        <dt class="col-sm-3">Locations</dt><dd class="col-sm-9">@Model.Tour.Locations</dd>
+        <dt class="col-sm-3">Description</dt><dd class="col-sm-9">@Model.Tour.Description</dd>
+    </dl>
+    <a class="btn btn-success" asp-page="/Bookings/Create" asp-route-tourId="@Model.Tour.Id">Book Tour</a>
+}

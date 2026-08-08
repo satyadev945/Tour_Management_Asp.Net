@@ -1,0 +1,28 @@
+@page
+@model TourManagement.Web.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="hero mb-4">
+    <h1>Modern Tour Management</h1>
+    <p>Browse tours, manage bookings, and administer travelers with a .NET 8 Razor Pages application.</p>
+    <a class="btn btn-light btn-lg" asp-page="/Tours/Index">Explore Tours</a>
+</div>
+
+<div class="row g-4">
+    @foreach (var tour in Model.FeaturedTours)
+    {
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <img class="card-img-top" src="@(tour.ImagePath ?? "https://via.placeholder.com/600x400")" alt="@tour.Name" />
+                <div class="card-body">
+                    <h5 class="card-title">@tour.Name</h5>
+                    <p class="card-text">@tour.Place · @tour.Days days · @tour.Price.ToString("C")</p>
+                    <p class="card-text">@tour.Description</p>
+                    <a class="btn btn-primary" asp-page="/Tours/Details" asp-route-id="@tour.Id">Details</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

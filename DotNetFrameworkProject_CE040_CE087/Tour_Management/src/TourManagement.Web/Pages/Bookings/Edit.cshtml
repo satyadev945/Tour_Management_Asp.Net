@@ -1,0 +1,11 @@
+@page "{id:int}"
+@model TourManagement.Web.Pages.Bookings.EditModel
+<h1>Edit Booking</h1>
+<form method="post" class="row g-3">
+    <div class="col-md-6"><label asp-for="Booking.TourId" class="form-label"></label><select asp-for="Booking.TourId" asp-items="Model.TourOptions" class="form-select"></select></div>
+    <div class="col-md-6"><label asp-for="Booking.CustomerName" class="form-label"></label><input asp-for="Booking.CustomerName" class="form-control" /></div>
+    <div class="col-md-6"><label asp-for="Booking.Email" class="form-label"></label><input asp-for="Booking.Email" class="form-control" /></div>
+    <div class="col-md-3"><label asp-for="Booking.City" class="form-label"></label><input asp-for="Booking.City" class="form-control" /></div>
+    <div class="col-md-3"><label asp-for="Booking.PhoneNumber" class="form-label"></label><input asp-for="Booking.PhoneNumber" class="form-control" /></div>
+    <div class="col-12"><button type="submit" class="btn btn-primary">Update</button></div>
+</form>

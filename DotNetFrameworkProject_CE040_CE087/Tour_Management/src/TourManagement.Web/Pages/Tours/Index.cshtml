@@ -1,0 +1,27 @@
+@page
+@model TourManagement.Web.Pages.Tours.IndexModel
+@{
+    ViewData["Title"] = "Tours";
+}
+<h1>Tours</h1>
+<p><a class="btn btn-primary" asp-page="Create">Create Tour</a></p>
+<div class="row g-4">
+@foreach (var item in Model.Tours)
+{
+    <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+            <img class="card-img-top" src="@(item.ImagePath ?? "https://via.placeholder.com/600x400")" alt="@item.Name" />
+            <div class="card-body">
+                <h5>@item.Name</h5>
+                <p>@item.Place · @item.Days days · @item.Price.ToString("C")</p>
+                <p>@item.Locations</p>
+                <div class="table-actions">
+                    <a class="btn btn-sm btn-outline-primary" asp-page="Details" asp-route-id="@item.Id">Details</a>
+                    <a class="btn btn-sm btn-outline-secondary" asp-page="Edit" asp-route-id="@item.Id">Edit</a>
+                    <a class="btn btn-sm btn-outline-danger" asp-page="Delete" asp-route-id="@item.Id">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+</div>

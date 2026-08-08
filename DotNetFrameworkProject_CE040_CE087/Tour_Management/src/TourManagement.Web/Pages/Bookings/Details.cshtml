@@ -1,0 +1,13 @@
+@page "{id:int}"
+@model TourManagement.Web.Pages.Bookings.DetailsModel
+@if (Model.Booking is not null)
+{
+    <h1>Booking Details</h1>
+    <dl class="row">
+        <dt class="col-sm-3">Tour</dt><dd class="col-sm-9">@Model.Booking.TourName</dd>
+        <dt class="col-sm-3">Customer</dt><dd class="col-sm-9">@Model.Booking.CustomerName</dd>
+        <dt class="col-sm-3">Email</dt><dd class="col-sm-9">@Model.Booking.Email</dd>
+        <dt class="col-sm-3">City</dt><dd class="col-sm-9">@Model.Booking.City</dd>
+        <dt class="col-sm-3">Phone</dt><dd class="col-sm-9">@Model.Booking.PhoneNumber</dd>
+    </dl>
+}

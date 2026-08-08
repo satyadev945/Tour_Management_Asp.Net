@@ -1,0 +1,17 @@
+@page
+@model TourManagement.Web.Pages.Users.CreateModel
+<h1>Register User</h1>
+<form method="post" class="row g-3">
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<div class="col-md-6"><label asp-for="Registration.Email" class="form-label"></label><input asp-for="Registration.Email" class="form-control" /></div>
+<div class="col-md-6"><label asp-for="Registration.Password" class="form-label"></label><input asp-for="Registration.Password" class="form-control" /></div>
+<div class="col-md-6"><label asp-for="Registration.FirstName" class="form-label"></label><input asp-for="Registration.FirstName" class="form-control" /></div>
+<div class="col-md-6"><label asp-for="Registration.LastName" class="form-label"></label><input asp-for="Registration.LastName" class="form-control" /></div>
+<div class="col-md-4"><label asp-for="Registration.Gender" class="form-label"></label><input asp-for="Registration.Gender" class="form-control" /></div>
+<div class="col-md-4"><label asp-for="Registration.DateOfBirth" class="form-label"></label><input asp-for="Registration.DateOfBirth" class="form-control" /></div>
+<div class="col-md-4"><label asp-for="Registration.City" class="form-label"></label><input asp-for="Registration.City" class="form-control" /></div>
+<div class="col-md-6"><label asp-for="Registration.Street" class="form-label"></label><input asp-for="Registration.Street" class="form-control" /></div>
+<div class="col-md-6"><label asp-for="Registration.State" class="form-label"></label><input asp-for="Registration.State" class="form-control" /></div>
+<div class="col-12"><button type="submit" class="btn btn-primary">Register</button></div>
+</form>
+@section Scripts { <partial name="_ValidationScriptsPartial" /> }

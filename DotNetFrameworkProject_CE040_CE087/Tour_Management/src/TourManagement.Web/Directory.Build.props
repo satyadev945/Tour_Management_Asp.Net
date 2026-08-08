@@ -1,0 +1,5 @@
+<Project>
+  <PropertyGroup>
+    <MSBuildProjectExtensionsPath>$(BaseIntermediateOutputPath)obj\</MSBuildProjectExtensionsPath>
+  </PropertyGroup>
+</Project>

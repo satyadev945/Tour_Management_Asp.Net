@@ -1,0 +1,8 @@
+namespace TourManagement.Domain.Exceptions;
+
+public sealed class EntityNotFoundException : Exception
+{
+    public EntityNotFoundException(string message) : base(message)
+    {
+    }
+}

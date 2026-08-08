@@ -1,0 +1,10 @@
+@page
+@model TourManagement.Web.Pages.Users.LoginModel
+<h1>User Login</h1>
+@if (!string.IsNullOrWhiteSpace(Model.Message)) { <div class="alert alert-danger">@Model.Message</div> }
+<form method="post" class="row g-3">
+<div class="col-md-6"><label asp-for="Login.Email" class="form-label"></label><input asp-for="Login.Email" class="form-control" /></div>
+<div class="col-md-6"><label asp-for="Login.Password" class="form-label"></label><input asp-for="Login.Password" class="form-control" /></div>
+<div class="col-12"><button type="submit" class="btn btn-primary">Login</button></div>
+</form>
+@section Scripts { <partial name="_ValidationScriptsPartial" /> }

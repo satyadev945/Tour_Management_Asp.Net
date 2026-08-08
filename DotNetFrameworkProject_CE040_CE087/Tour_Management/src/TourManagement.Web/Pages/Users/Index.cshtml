@@ -1,0 +1,10 @@
+@page
+@model TourManagement.Web.Pages.Users.IndexModel
+<h1>Users</h1>
+<p><a class="btn btn-primary" asp-page="Create">Register User</a> <a class="btn btn-outline-secondary" asp-page="Login">Login</a></p>
+<table class="table table-striped"><thead><tr><th>Email</th><th>Name</th><th>Gender</th><th>City</th><th>State</th><th></th></tr></thead><tbody>
+@foreach (var item in Model.Users)
+{
+<tr><td>@item.Email</td><td>@item.FirstName @item.LastName</td><td>@item.Gender</td><td>@item.City</td><td>@item.State</td><td class="table-actions"><a asp-page="Details" asp-route-id="@item.Id">Details</a><a asp-page="Edit" asp-route-id="@item.Id">Edit</a><a asp-page="Delete" asp-route-id="@item.Id">Delete</a></td></tr>
+}
+</tbody></table>

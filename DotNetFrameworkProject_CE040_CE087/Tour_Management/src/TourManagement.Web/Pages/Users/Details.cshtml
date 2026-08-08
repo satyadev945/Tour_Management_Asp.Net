@@ -1,0 +1,7 @@
+@page "{id:int}"
+@model TourManagement.Web.Pages.Users.DetailsModel
+@if (Model.UserItem is not null)
+{
+<h1>User Details</h1>
+<dl class="row"><dt class="col-sm-3">Email</dt><dd class="col-sm-9">@Model.UserItem.Email</dd><dt class="col-sm-3">Name</dt><dd class="col-sm-9">@Model.UserItem.FirstName @Model.UserItem.LastName</dd><dt class="col-sm-3">Gender</dt><dd class="col-sm-9">@Model.UserItem.Gender</dd><dt class="col-sm-3">City</dt><dd class="col-sm-9">@Model.UserItem.City</dd></dl>
+}
